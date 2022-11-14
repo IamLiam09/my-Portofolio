@@ -1,8 +1,11 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {AiFillLinkedin, AiFillGithub} from "react-icons/ai"
-import Image from "next/image"
-import deved from "../public/dev-ed-wave.png"
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 export default function Home() {
 	return (
 		<div>
@@ -31,19 +34,103 @@ export default function Home() {
 						</ul>
 					</nav>
 					<div className="text-center p-10">
-						<h2 className="text-5xl py-2 text-teal-600 font-media">Ndubuisi William</h2>
+						<h2 className="text-5xl py-2 text-teal-600 font-media">
+							Ndubuisi William
+						</h2>
 						<h3 className="text-2xl py-2">Software Developer</h3>
 						<p className="text-md py-5 leading-8 text-gray-800">
-							Self taught developer, who's passionate about frontend development,
-							building UI's and creating API
+							Self taught developer, who's passionate about frontend
+							development, building UI's and creating API
 						</p>
 					</div>
 					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
 						<AiFillLinkedin />
 						<AiFillGithub />
 					</div>
-					<div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 ">
-						<Image src={deved} layout="fill" objectFit="cover"/>
+					<div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+						<Image src={deved} layout="fill" objectFit="cover" />
+					</div>
+				</section>
+				<section>
+					<div>
+						<h3 className="text-3xl py-1">Services I offer</h3>
+						<p className="text-md py-2 leading-8 text-gray-800">
+							Since the beginning of my journey as a self taught developer, I've
+							been building and
+							<span className="text-teal-500"> developing </span>
+							as much <span className="text-teal-500"> projects </span> as I
+							can. And collaborated with talented people to create digital
+							products for both business and consumer use.
+						</p>
+						<p className="text-md py-2 leading-8 text-gray-800">
+							I offer from a wide range of services.
+						</p>
+					</div>
+					{/* The section about designs and what I offer */}
+					<div>
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+							<Image
+								src={design}
+								width={100}
+								height={100}
+								className="mx-auto"
+							/>
+							<h3 className="text-lg font-medium pt-8 pb-2">
+								Beautiful Designs
+							</h3>
+							<p className="py-2">
+								Creating elegant designs suited for you needs following design
+								theory.
+							</p>
+							<h4 className="py-4 text-teal-600">Designs tools I use</h4>
+							<p className="text-gray-800 py-1">Figma</p>
+							<p className="text-gray-800 py-1">Gimp</p>
+						</div>
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+							<Image src={code} width={100} height={100} className="mx-auto" />
+							<h3 className="text-lg font-medium pt-8 pb-2">Programming</h3>
+							<p className="py-2">
+								Bringing designs to life and problem solving
+							</p>
+							<h4 className="py-4 text-teal-600">
+								Programming languages I use
+							</h4>
+							<p className="text-gray-800 py-1">HTML</p>
+							<p className="text-gray-800 py-1">JavaScript</p>
+							<p className="text-gray-800 py-1">Python</p>
+							<p className="text-gray-800 py-1">SQL</p>
+							<p className="text-gray-800 py-1">CSS</p>
+						</div>
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+							<Image
+								src={consulting}
+								width={100}
+								height={100}
+								className="mx-auto"
+							/>
+							<h3 className="text-lg font-medium pt-8 pb-2">Others</h3>
+							<p className="py-2">Tools need to get the work done</p>
+							<h4 className="py-4 text-teal-600">Developer tools I use</h4>
+							<p className="text-gray-800 py-1">React</p>
+							<p className="text-gray-800 py-1">Django</p>
+							<p className="text-gray-800 py-1">Vscode</p>
+							<p className="text-gray-800 py-1">GitHub</p>
+							<p className="text-gray-800 py-1">Linux</p>
+						</div>
+					</div>
+					<div>
+						<h3 className="text-3xl py-1">Portofolio</h3>
+						<p className="text-md py-2 leading-8 text-gray-800">
+							Since the beginning of my journey as a self taught developer, I've
+							been building and
+							<span className="text-teal-500"> developing </span>
+							as much <span className="text-teal-500"> projects </span> as I
+							can. And collaborated with talented people to create digital
+							products for both business and consumer use.
+						</p>
+						<p className="text-md py-2 leading-8 text-gray-800">
+							I offer from a wide range of services.
+						</p>
 					</div>
 				</section>
 			</main>
