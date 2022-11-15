@@ -54,7 +54,7 @@ export default function Home() {
 						<AiFillGithub />
 					</div>
 					<div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-						<Image src={wave} className="object-cover fill-current" />
+						<Image src={wave} className="object-cover" layout="fill" alt="3d-me"/>
 					</div>
 				</section>
 				<section>
@@ -80,6 +80,7 @@ export default function Home() {
 								width={100}
 								height={100}
 								className="mx-auto"
+								alt="desigsn"
 							/>
 							<h3 className="text-lg font-medium pt-8 pb-2">
 								Beautiful Designs
@@ -93,7 +94,7 @@ export default function Home() {
 							<p className="text-gray-800 py-1">Gimp</p>
 						</div>
 						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-							<Image src={code} width={100} height={100} className="mx-auto" />
+							<Image src={code} width={100} height={100} className="mx-auto" alt="languages"/>
 							<h3 className="text-lg font-medium pt-8 pb-2">Programming</h3>
 							<p className="py-2">
 								Bringing designs to life and problem solving
@@ -113,6 +114,7 @@ export default function Home() {
 								width={100}
 								height={100}
 								className="mx-auto"
+								alt="other"
 							/>
 							<h3 className="text-lg font-medium pt-8 pb-2">Others</h3>
 							<p className="py-2">Tools need to get the work done</p>
