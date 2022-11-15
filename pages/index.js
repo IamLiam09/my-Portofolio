@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import wave from "../public/wave.png";
@@ -24,15 +24,22 @@ export default function Home() {
 						<Image alt="mini me" src={emoji} className="w-20 h-20" />
 						<ul className="flex items-center">
 							<li>
-								<BsFillMoonStarsFill
-									onClick={() => setDarkMode(!darkMode)}
-									className="cursor-pointer text-2xl"
-								/>
+								{darkMode === false ? (
+									<BsFillMoonStarsFill
+										onClick={() => setDarkMode(!darkMode)}
+										className="cursor-pointer text-2xl"
+									/>
+								) : (
+									<BsFillSunFill
+										onClick={() => setDarkMode(!darkMode)}
+										className="cursor-pointer text-2xl"
+									/>
+								)}
 							</li>
 							<li>
 								<a
 									className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-									href="#"
+									href="https://drive.google.com/file/d/1rj7TIahN7riElSCc5CHlSD6U456k1iZS/view?usp=sharing"
 								>
 									Resume
 								</a>
@@ -43,37 +50,50 @@ export default function Home() {
 						<h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
 							Ndubuisi William
 						</h2>
-						<h3 className="text-2xl py-2 md:text-3xl dark:text-white">Software Developer</h3>
+						<h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+							Software Developer
+						</h3>
 						<p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
 							Self taught developer, who's passionate about frontend
 							development, building UI's and creating API
 						</p>
 					</div>
 					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-						<AiFillLinkedin />
-						<AiFillGithub />
+						<a href="http://linkedin.com/in/william-ndubuisi-wd">
+							{" "}
+							<AiFillLinkedin />{" "}
+						</a>
+						<a href="https://github.com/IamLiam09">
+							{" "}
+							<AiFillGithub />{" "}
+						</a>
 					</div>
 					<div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-						<Image src={wave} className="object-cover" layout="fill" alt="3d-me"/>
+						<Image
+							src={wave}
+							className="object-cover"
+							layout="fill"
+							alt="3d-me"
+						/>
 					</div>
 				</section>
 				<section>
 					<div>
-						<h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+						<h3 className="text-3xl py-1 dark:text-white">Skills I offer</h3>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
 							Since the beginning of my journey as a self taught developer, I've
 							been building and
 							<span className="text-teal-500"> developing </span>
 							as much <span className="text-teal-500"> projects </span> as I
 							can. And collaborated with talented people to create digital
-							products for both business and consumer use.
+							products for both businesses and personal use.
 						</p>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-							I offer from a wide range of services.
+							I offer from a wide range of skill set.
 						</p>
 					</div>
 					{/* The section about designs and what I offer */}
-					<div className="lg:flex gap-10">
+					<div className="lg:flex gap-5">
 						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
 							<Image
 								src={design}
@@ -94,7 +114,13 @@ export default function Home() {
 							<p className="text-gray-800 py-1">Gimp</p>
 						</div>
 						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-							<Image src={code} width={100} height={100} className="mx-auto" alt="languages"/>
+							<Image
+								src={code}
+								width={100}
+								height={100}
+								className="mx-auto"
+								alt="languages"
+							/>
 							<h3 className="text-lg font-medium pt-8 pb-2">Programming</h3>
 							<p className="py-2">
 								Bringing designs to life and problem solving
@@ -117,7 +143,7 @@ export default function Home() {
 								alt="other"
 							/>
 							<h3 className="text-lg font-medium pt-8 pb-2">Others</h3>
-							<p className="py-2">Tools need to get the work done</p>
+							<p className="py-2">Tools needed to get the work done</p>
 							<h4 className="py-4 text-teal-600">Developer tools I use</h4>
 							<p className="text-gray-800 py-1">React</p>
 							<p className="text-gray-800 py-1">Django</p>
@@ -129,15 +155,15 @@ export default function Home() {
 					<div>
 						<h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-							Since the beginning of my journey as a self taught developer, I've
-							been building and
-							<span className="text-teal-500"> developing </span>
+							My Portofolio consist of a wide range of projects some personal,
+							some task based.
+							<span className="text-teal-500"> Developing </span>
 							as much <span className="text-teal-500"> projects </span> as I
-							can. And collaborated with talented people to create digital
-							products for both business and consumer use.
+							can, has been my goal for the past year since I Started my
+							journey.
 						</p>
-						<p className="text-md py-2 leading-8 text-gray-800">
-							I offer from a wide range of services.
+						<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+							I hope you find my projects/portofolio to your liking
 						</p>
 					</div>
 				</section>
