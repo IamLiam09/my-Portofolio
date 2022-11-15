@@ -94,13 +94,13 @@ export default function Home() {
 					</div>
 					{/* The section about designs and what I offer */}
 					<div className="lg:flex gap-5">
-						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white basis-0 grow">
 							<Image
 								src={design}
 								width={100}
 								height={100}
 								className="mx-auto"
-								alt="desigsn"
+								alt="design"
 							/>
 							<h3 className="text-lg font-medium pt-8 pb-2">
 								Beautiful Designs
@@ -113,7 +113,7 @@ export default function Home() {
 							<p className="text-gray-800 py-1">Figma</p>
 							<p className="text-gray-800 py-1">Gimp</p>
 						</div>
-						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white basis-0 grow">
 							<Image
 								src={code}
 								width={100}
@@ -134,7 +134,7 @@ export default function Home() {
 							<p className="text-gray-800 py-1">SQL</p>
 							<p className="text-gray-800 py-1">CSS</p>
 						</div>
-						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white basis-0 grow">
 							<Image
 								src={consulting}
 								width={100}
@@ -159,7 +159,7 @@ export default function Home() {
 							some task based.
 							<span className="text-teal-500"> Developing </span>
 							as much <span className="text-teal-500"> projects </span> as I
-							can, has been my goal for the past year since I Started my
+							can, has been my goal since I Started my
 							journey.
 						</p>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
