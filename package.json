@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tawk.to/tawk-messenger-react": "^2.0.1",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "fast-glob": "^3.2.12",
