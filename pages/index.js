@@ -49,7 +49,7 @@ export default function Home() {
 							<li>
 								<a
 									className="cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-									href="https://drive.google.com/file/d/1rj7TIahN7riElSCc5CHlSD6U456k1iZS/view?usp=sharing"
+									href="https://drive.google.com/file/d/1cp6boZpHJEzI2CzHx6UaEaB2_iRapmzH/view?usp=share_link"
 								>
 									Resume
 								</a>
@@ -175,13 +175,13 @@ export default function Home() {
 					</div>
 					<div className="relative flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
 								<p>Tech Stack: React, SCSS, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center">
+							<div className="h-56 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={web1}
 									className="rounded-lg object-cover"
@@ -192,13 +192,13 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
 								<p>Tech Stack: React, Bootstrap, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center">
+							<div className="h-56 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={web2}
 									className="rounded-lg object-cover"
@@ -209,13 +209,13 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
 								<p>Tech Stack: DJango, Bootstrap, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center">
+							<div className="h-56 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={blog}
 									className="rounded-lg object-cover"
@@ -226,13 +226,13 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300 h-56 absolute">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300 h-56 absolute lg:h-64">
 								<p>Tech Stack: JavaScript, SCSS, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center">
+							<div className="h-56 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={web6}
 									className="rounded-lg object-cover"
