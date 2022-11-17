@@ -47,12 +47,14 @@ export default function Home() {
 								)}
 							</li>
 							<li>
-								<a
-									className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-									href="https://drive.google.com/file/d/1rj7TIahN7riElSCc5CHlSD6U456k1iZS/view?usp=sharing"
-								>
-									Resume
-								</a>
+								<div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">
+									<a
+										
+										href="https://drive.google.com/file/d/1rj7TIahN7riElSCc5CHlSD6U456k1iZS/view?usp=sharing"
+									>
+										Resume
+									</a>
+								</div>
 							</li>
 						</ul>
 					</nav>
@@ -176,16 +178,16 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<a className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
+						<div className="basis-1/3 flex-1 hover:-translate-y-4 ease-in delay-150 drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
 								<h1 className="tracking-wider">
 									Tech Stack: React, SCSS, HTML, Git
 								</h1>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
-							</a>
-							<a href="#" className="relative">
+							</div>
+							<div className="relative">
 								<div className="h-60 flex flex-wrap content-center">
 									<Image
 										src={web1}
@@ -195,18 +197,18 @@ export default function Home() {
 										layout="responsive"
 									/>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<a className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
+							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
 								<h1 className="tracking-wider">
 									Tech Stack: React, Bootstrap, HTML, Git
 								</h1>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
-							</a>
-							<a href="#" className="relative">
+							</div>
+							<div className="relative">
 								<div className="h-60 flex flex-wrap content-center">
 									<Image
 										src={web2}
@@ -216,19 +218,18 @@ export default function Home() {
 										layout="responsive"
 									/>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<a className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
+							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
 								<h1 className="tracking-wider">
-									{" "}
 									Tech Stack: DJango, Bootstrap, HTML, Git
 								</h1>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
-							</a>
-							<a href="#" className="relative">
+							</div>
+							<div className="relative">
 								<div className="h-60 flex flex-wrap content-center">
 									<Image
 										src={blog}
@@ -238,19 +239,18 @@ export default function Home() {
 										layout="responsive"
 									/>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<a className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300">
+							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300">
 								<h1 className="tracking-wider">
-									{" "}
 									Tech Stack: JavaScript, SCSS, HTML, Git
 								</h1>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
-							</a>
-							<a href="#" className="relative">
+							</div>
+							<div href="#" className="relative">
 								<div className="h-60 flex flex-wrap content-center">
 									<Image
 										src={web6}
@@ -260,7 +260,7 @@ export default function Home() {
 										layout="responsive"
 									/>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 				</section>
