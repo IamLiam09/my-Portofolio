@@ -12,7 +12,7 @@ import web2 from "../public/cvbuilder.png";
 import blog from "../public/blog.png";
 import web6 from "../public/restaurantPage.png";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
-import Script from "next/script";
+// import Script from "next/script";
 import { useState, useRef } from "react";
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(false);
@@ -28,11 +28,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-				<section className="min-h-screen">
+				<section className="min-h-screen" id="nav">
 					{/* The nav section */}
 					<nav className="py-10 mb-12 flex justify-between">
 						<Image alt="mini me" src={emoji} className="w-20 h-20" />
-						<ul className="flex items-center">
+						<ul className="flex items-center ">
 							<li>
 								{darkMode === false ? (
 									<BsFillMoonStarsFill
@@ -47,14 +47,12 @@ export default function Home() {
 								)}
 							</li>
 							<li>
-								<div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">
-									<a
-										
-										href="https://drive.google.com/file/d/1rj7TIahN7riElSCc5CHlSD6U456k1iZS/view?usp=sharing"
-									>
-										Resume
-									</a>
-								</div>
+								<a
+									className="cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+									href="https://drive.google.com/file/d/1rj7TIahN7riElSCc5CHlSD6U456k1iZS/view?usp=sharing"
+								>
+									Resume
+								</a>
 							</li>
 						</ul>
 					</nav>
@@ -70,14 +68,12 @@ export default function Home() {
 							development, building UI's and creating API
 						</p>
 					</div>
-					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer">
 						<a href="http://linkedin.com/in/william-ndubuisi-wd">
-							{" "}
-							<AiFillLinkedin />{" "}
+							<AiFillLinkedin />
 						</a>
 						<a href="https://github.com/IamLiam09">
-							{" "}
-							<AiFillGithub />{" "}
+							<AiFillGithub />
 						</a>
 					</div>
 					<div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -177,89 +173,73 @@ export default function Home() {
 							I hope you find my projects/portfolio to your liking
 						</p>
 					</div>
-					<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-						<div className="basis-1/3 flex-1 hover:-translate-y-4 ease-in delay-150 drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
-								<h1 className="tracking-wider">
-									Tech Stack: React, SCSS, HTML, Git
-								</h1>
+					<div className="relative flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute">
+								<p>Tech Stack: React, SCSS, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="relative">
-								<div className="h-60 flex flex-wrap content-center">
-									<Image
-										src={web1}
-										className="rounded-lg object-cover"
-										width={"100%"}
-										height={"100%"}
-										layout="responsive"
-									/>
-								</div>
+							<div className="h-56 flex flex-wrap content-center">
+								<Image
+									src={web1}
+									className="rounded-lg object-cover"
+									width={"100%"}
+									height={"100%"}
+									layout="responsive"
+								/>
 							</div>
 						</div>
-						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
-								<h1 className="tracking-wider">
-									Tech Stack: React, Bootstrap, HTML, Git
-								</h1>
+						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute">
+								<p>Tech Stack: React, Bootstrap, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="relative">
-								<div className="h-60 flex flex-wrap content-center">
-									<Image
-										src={web2}
-										className="rounded-lg object-cover"
-										width={"100%"}
-										height={"100%"}
-										layout="responsive"
-									/>
-								</div>
+							<div className="h-56 flex flex-wrap content-center">
+								<Image
+									src={web2}
+									className="rounded-lg object-cover"
+									width={"100%"}
+									height={"100%"}
+									layout="responsive"
+								/>
 							</div>
 						</div>
-						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300">
-								<h1 className="tracking-wider">
-									Tech Stack: DJango, Bootstrap, HTML, Git
-								</h1>
+						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute">
+								<p>Tech Stack: DJango, Bootstrap, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div className="relative">
-								<div className="h-60 flex flex-wrap content-center">
-									<Image
-										src={blog}
-										className="rounded-lg object-cover"
-										width={"100%"}
-										height={"100%"}
-										layout="responsive"
-									/>
-								</div>
+							<div className="h-56 flex flex-wrap content-center">
+								<Image
+									src={blog}
+									className="rounded-lg object-cover"
+									width={"100%"}
+									height={"100%"}
+									layout="responsive"
+								/>
 							</div>
 						</div>
-						<div className="basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="absolute inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300">
-								<h1 className="tracking-wider">
-									Tech Stack: JavaScript, SCSS, HTML, Git
-								</h1>
+						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300 h-56 absolute">
+								<p>Tech Stack: JavaScript, SCSS, HTML, Git</p>
 								<a href="https://github.com/IamLiam09">
 									<AiFillGithub />
 								</a>
 							</div>
-							<div href="#" className="relative">
-								<div className="h-60 flex flex-wrap content-center">
-									<Image
-										src={web6}
-										className="rounded-lg object-cover"
-										width={"100%"}
-										height={"100%"}
-										layout="responsive"
-									/>
-								</div>
+							<div className="h-56 flex flex-wrap content-center">
+								<Image
+									src={web6}
+									className="rounded-lg object-cover"
+									width={"100%"}
+									height={"100%"}
+									layout="responsive"
+								/>
 							</div>
 						</div>
 					</div>
