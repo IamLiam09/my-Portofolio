@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { FaFileCode, FaLink } from "react-icons/fa";
 import Image from "next/image";
 import wave from "../public/wave.png";
 import design from "../public/design.png";
@@ -176,13 +177,17 @@ export default function Home() {
 					<div className="relative flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
 							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p className="text-xl py-2 px-2">React, SCSS, HTML, Git</p>
-								<p className="text-xl py-2 px-2">A card game built to check one's
-								retentiveness, I added audio and animation to the game to give it
-								a more stimulating effect</p>
-									<a href="https://github.com/IamLiam09/Memory-card">
-										<AiFillGithub className="absolute bottom-2 right-2 h-16 w-16"/>
-									</a>
+								<p className="text-base py-6 px-6">React, SCSS, HTML, Git</p>
+								<p className="text-base py-2 px-6">
+									A card game built to check one's retentiveness, I added audio
+									and animation to the game to give it a more stimulating effect
+								</p>
+								<a href="https://lambocard.netlify.app/">
+									<FaLink className="absolute bottom-2 right-14 h-10 w-10" />
+								</a>
+								<a href="https://github.com/IamLiam09/Memory-card">
+									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
+								</a>
 							</div>
 							<div className="h-56 flex flex-wrap content-center lg:h-54">
 								<Image
@@ -195,10 +200,19 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p>Tech Stack: React, Bootstrap, HTML, Git</p>
-								<a href="https://github.com/IamLiam09">
-									<AiFillGithub />
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
+								<p className="text-base py-6 px-6">
+									React, Bootstrap, HTML, Git
+								</p>
+								<p className="text-base py-2 px-6">
+									Website that builds resumes. Asks for all the required details
+									needed to build one
+								</p>
+								<a href="https://cvbywill.netlify.app/">
+									<FaLink className="absolute bottom-2 right-14 h-10 w-10" />
+								</a>
+								<a href="https://github.com/IamLiam09/cv-project">
+									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
 							<div className="h-56 flex flex-wrap content-center lg:h-54">
@@ -212,10 +226,20 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p>Tech Stack: DJango, Bootstrap, HTML, Git</p>
-								<a href="https://github.com/IamLiam09">
-									<AiFillGithub />
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
+								<p className="text-base py-6 px-6">
+									Django, Bootstrap, SQL, Python, HTML, Git
+								</p>
+								<p className="text-base py-2 px-6">
+									Blog site used to track your learning on a daily basis. User
+									authencation, database, api and alot more features were
+									implemented here. Fullstack app
+								</p>
+								<a href="blog-min.herokuapp.com">
+									<FaLink className="absolute bottom-2 right-14 h-10 w-10" />
+								</a>
+								<a href="https://github.com/IamLiam09/learning_log">
+									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
 							<div className="h-56 flex flex-wrap content-center lg:h-54">
@@ -229,10 +253,18 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 flex-1 duration-300 h-56 absolute lg:h-64">
-								<p>Tech Stack: JavaScript, SCSS, HTML, Git</p>
-								<a href="https://github.com/IamLiam09">
-									<AiFillGithub />
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
+								<p className="text-base py-6 px-6">
+									JavaScrip, SCSS, HTML, Git
+								</p>
+								<p className="text-base py-2 px-6">
+									Responsive restaurant page with feature like swipe for mobile.
+								</p>
+								<a href="https://afrirokitchen.netlify.app/">
+									<FaLink className="absolute bottom-2 right-14 h-10 w-10" />
+								</a>
+								<a href="https://github.com/IamLiam09/Restaurant">
+									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
 							<div className="h-56 flex flex-wrap content-center lg:h-54">
