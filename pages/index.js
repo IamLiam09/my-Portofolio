@@ -175,11 +175,14 @@ export default function Home() {
 					</div>
 					<div className="relative flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p>Tech Stack: React, SCSS, HTML, Git</p>
-								<a href="https://github.com/IamLiam09">
-									<AiFillGithub />
-								</a>
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
+								<p className="text-xl py-2 px-2">React, SCSS, HTML, Git</p>
+								<p className="text-xl py-2 px-2">A card game built to check one's
+								retentiveness, I added audio and animation to the game to give it
+								a more stimulating effect</p>
+									<a href="https://github.com/IamLiam09/Memory-card">
+										<AiFillGithub className="absolute bottom-2 right-2 h-16 w-16"/>
+									</a>
 							</div>
 							<div className="h-56 flex flex-wrap content-center lg:h-54">
 								<Image
