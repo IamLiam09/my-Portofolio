@@ -2,6 +2,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaFileCode, FaLink } from "react-icons/fa";
+import { IconContext } from "react-icons";
 import Image from "next/image";
 import wave from "../public/wave.png";
 import design from "../public/design.png";
@@ -41,10 +42,12 @@ export default function Home() {
 										className="cursor-pointer text-2xl"
 									/>
 								) : (
-									<BsFillSunFill
-										onClick={() => setDarkMode(!darkMode)}
-										className="cursor-pointer text-2xl"
-									/>
+									<IconContext.Provider value={{ color: "white"}}>
+										<BsFillSunFill
+											onClick={() => setDarkMode(!darkMode)}
+											className="cursor-pointer text-2xl"
+										/>
+									</IconContext.Provider>
 								)}
 							</li>
 							<li>
