@@ -178,10 +178,10 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="relative flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p className="text-base py-6 px-6">React, SCSS, HTML, Git</p>
-								<p className="text-base py-2 px-6">
+						<div className="relative basis-1/3 flex-1 cursor-pointer hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-54 absolute">
+								<p className="text-sm py-6 px-6">React, SCSS, HTML, Git</p>
+								<p className="text-sm py-2 px-6">
 									A card game built to check one's retentiveness, I added audio
 									and animation to the game to give it a more stimulating effect
 								</p>
@@ -192,7 +192,7 @@ export default function Home() {
 									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center lg:h-54">
+							<div className="h-54 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={web1}
 									className="rounded-lg object-cover"
@@ -202,12 +202,12 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p className="text-base py-6 px-6">
+						<div className="relative basis-1/3 cursor-pointer flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-54 absolute">
+								<p className="text-sm py-6 px-6">
 									React, Bootstrap, HTML, Git
 								</p>
-								<p className="text-base py-2 px-6">
+								<p className="text-sm py-2 px-6">
 									Website that builds resumes. Asks for all the required details
 									needed to build one
 								</p>
@@ -218,7 +218,7 @@ export default function Home() {
 									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center lg:h-54">
+							<div className="h-54 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={web2}
 									className="rounded-lg object-cover"
@@ -228,12 +228,12 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p className="text-base py-6 px-6">
+						<div className="relative basis-1/3 cursor-pointer flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-54 absolute">
+								<p className="text-sm py-6 px-6">
 									Django, Bootstrap, SQL, Python, HTML, Git
 								</p>
-								<p className="text-base py-2 px-6">
+								<p className="text-sm py-2 px-6">
 									Blog site used to track your learning on a daily basis. User
 									authencation, database, api and alot more features were
 									implemented here. Fullstack app
@@ -245,7 +245,7 @@ export default function Home() {
 									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center lg:h-54">
+							<div className="h-54 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={blog}
 									className="rounded-lg object-cover"
@@ -255,12 +255,12 @@ export default function Home() {
 								/>
 							</div>
 						</div>
-						<div className="relative basis-1/3 flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
-							<div className="inset-0 z-10 bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-56 absolute lg:h-64">
-								<p className="text-base py-6 px-6">
-									JavaScrip, SCSS, HTML, Git
+						<div className="relative basis-1/3 cursor-pointer flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
+							<div className="inset-0 z-10 bg-amber-400 text-sm text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-54 absolute ">
+								<p className="text-sm py-6 px-6">
+									JavaScript, SCSS, HTML, Git
 								</p>
-								<p className="text-base py-2 px-6">
+								<p className="text-sm py-2 px-6">
 									Responsive restaurant page with feature like swipe for mobile.
 								</p>
 								<a href="https://afrirokitchen.netlify.app/">
@@ -270,7 +270,7 @@ export default function Home() {
 									<FaFileCode className="absolute bottom-2 right-2 h-10 w-10" />
 								</a>
 							</div>
-							<div className="h-56 flex flex-wrap content-center lg:h-54">
+							<div className="h-54 flex flex-wrap content-center lg:h-54">
 								<Image
 									src={web6}
 									className="rounded-lg object-cover"
