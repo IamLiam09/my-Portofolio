@@ -11,7 +11,7 @@ import consulting from "../public/consulting.png";
 import emoji from "../public/emoji.png";
 import web1 from "../public/lambo card.png";
 import web2 from "../public/cvbuilder.png";
-import blog from "../public/blog.png";
+import blog from "../public/Business_master.png";
 import web6 from "../public/restaurantPage.png";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 // import Script from "next/script";
@@ -53,7 +53,7 @@ export default function Home() {
 							<li>
 								<a
 									className="cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-									href="https://drive.google.com/file/d/1cp6boZpHJEzI2CzHx6UaEaB2_iRapmzH/view?usp=share_link"
+									href="https://drive.google.com/file/d/1Y4Ftl5TIFgIYZGVyemti47-9MzhW4NHd/view?usp=share_link"
 								>
 									Resume
 								</a>
@@ -237,18 +237,18 @@ export default function Home() {
 						<div className="relative basis-1/3 cursor-pointer flex-1 hover:-translate-y-4 hover:ease-in hover:delay-150 hover:drop-shadow-[10px_5px_5px_rgb(0,0,0)]">
 							<div className="inset-0 z-10 overflow-hidden bg-amber-400 text-left flex flex-col items-start justify-start opacity-0 hover:opacity-100 rounded-lg bg-opacity-100 duration-300 h-54 absolute">
 								<p className="text-sm py-2 px-6 lg:text-base">
-									Django, Bootstrap, SQL, Python, HTML, Git
+									Laravel, PHP, HTML, tailwind, MySQL
 								</p>
 								<p className="text-sm py-2 px-6 lg:text-base">
-									Blog site used to track your learning on a daily basis. User
-									authencation, database, api and alot more features were
-									implemented here. Fullstack app
+									Online Library is a content management app created to help
+									course creators manage content effectively and help them
+									establish it as a business.
 								</p>
 								<div className="absolute bottom-2 flex right-2 gap-1">
-									<a href="blog-min.herokuapp.com">
+									<a href="http://www.businessinflowlms.online/store/my-store">
 										<FaLink className="lg:h-10 lg:w-10 md:h-6 md:w-6" />
 									</a>
-									<a href="https://github.com/IamLiam09/learning_log">
+									<a href="https://github.com/IamLiam09/Online_library/tree/master">
 										<FaFileCode className="lg:h-10 lg:w-10 md:h-6 md:w-6" />
 									</a>
 								</div>
