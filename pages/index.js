@@ -11,7 +11,7 @@ import consulting from "../public/consulting.png";
 import emoji from "../public/emoji.png";
 import web1 from "../public/lambo card.png";
 import web2 from "../public/cvbuilder.png";
-import blog from "../public/Business_master.png";
+import blog from "../public/Business_master.jpg";
 import web6 from "../public/restaurantPage.png";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 // import Script from "next/script";
