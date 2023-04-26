@@ -1,6 +1,11 @@
+// change readme about portofolio
 import Head from "next/head";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import {
+	AiFillLinkedin,
+	AiFillGithub,
+	AiFillTwitterCircle,
+} from "react-icons/ai";
 import { FaFileCode, FaLink } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import Image from "next/image";
@@ -68,8 +73,8 @@ export default function Home() {
 							Software Developer
 						</h3>
 						<p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-							Self taught developer, who's passionate about frontend
-							development, building UI's and creating API
+							Self taught developer, who's passionate about frontend development
+							and backend development, building UI's and creating API
 						</p>
 					</div>
 					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 cursor-pointer">
@@ -78,6 +83,9 @@ export default function Home() {
 						</a>
 						<a href="https://github.com/IamLiam09">
 							<AiFillGithub />
+						</a>
+						<a href="https://twitter.com/williamdev01">
+							<AiFillTwitterCircle />
 						</a>
 					</div>
 					<div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -144,6 +152,7 @@ export default function Home() {
 							<p className="text-gray-800 py-1">JavaScript</p>
 							<p className="text-gray-800 py-1">Python</p>
 							<p className="text-gray-800 py-1">SQL</p>
+							<p className="text-gray-800 py-1">PHP</p>
 							<p className="text-gray-800 py-1">CSS</p>
 						</div>
 						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white basis-0 grow">
@@ -168,7 +177,7 @@ export default function Home() {
 						<h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
 							My Portfolio consist of a wide range of projects some personal,
-							some task based.
+							task based, team based, freelance.
 							<span className="text-teal-500"> Developing </span>
 							as much <span className="text-teal-500"> projects </span> as I
 							can, has been my goal since I Started my journey.
