@@ -14,7 +14,7 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import emoji from "../public/emoji.png";
-import web1 from "../public/lambo card.png";
+import web1 from "../public/lambocard.png";
 import web2 from "../public/cvbuilder.png";
 import blog from "../public/Business_master.jpg";
 import web6 from "../public/restaurantPage.png";
@@ -211,6 +211,7 @@ export default function Home() {
 									className="rounded-lg object-cover"
 									width={"100%"}
 									height={"100%"}
+									alt="Lambocard"
 									layout="responsive"
 								/>
 							</div>
